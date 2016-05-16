@@ -1,0 +1,55 @@
+for configs please following this code :
+please go to folder 'application' then create 'configs' folder
+and then please add file : application.ini inside configs folder.
+
+======= in inside file =========
+
+[production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+includePaths.library = APPLICATION_PATH "/../library"
+bootstrap.path = APPLICATION_PATH "/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+appnamespace = "Application"
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+resources.frontController.params.displayExceptions = 1
+
+resources.modules[] = ""
+resources.frontController.moduleDirectory = APPLICATION_PATH "/modules"
+
+resources.layout.layout = "layout"
+resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts"
+
+resources.multidb.doc.adapter = "PDO_MYSQL"
+resources.multidb.doc.host = "(yourhost_db)"
+resources.multidb.doc.username = "(yourusername_db)"
+resources.multidb.doc.password = "(yourpassword_db)"
+resources.multidb.doc.dbname = "(yourname_db)"
+resources.multidb.doc.charset = "UTF8"
+resources.multidb.doc.isDefaultTableAdapter =  true
+
+[staging : production]
+
+resources.multidb.doc.adapter = "PDO_MYSQL"
+resources.multidb.doc.host = "(yourhostdb)"
+resources.multidb.doc.username = "(yourusername_db)"
+resources.multidb.doc.password = "(yourpassword_db)"
+resources.multidb.doc.dbname = "(yourname_db)"
+resources.multidb.doc.charset = "UTF8"
+resources.multidb.doc.isDefaultTableAdapter =  true
+
+[testing : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+
+[development : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+resources.frontController.params.displayExceptions = 1
+
+========= end ==============
+
+Thanks...
+Best Regards,
+
+Razord_Ice

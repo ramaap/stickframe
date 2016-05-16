@@ -1,0 +1,103 @@
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!--Header Start-->
+<header>
+<div class="header-top">
+<div class="container">
+<div class="header-container">
+  <div class="row">
+      <div class="col-md-6 col-sm-7">
+          <div class="header-contact">
+              <span class="email">Email: admin@bootexperts.com </span> / <span class="phone">Phone: +234.546.657</span>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="header-main">
+<div class="container">
+<div class="header-content">
+  <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="logo">
+              <a href="index.html"><img src="<?php echo $this->baseUrl('public/img/logo/logo.png');?>" alt="MOZAR"></a>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-8">
+          <div id="search-category">
+              <form class="search-box" action="#" method="post">
+                  <div class="search-categories">
+                      <div class="search-cat">
+                          <select class="category-items " name="category">
+                              <option>All Categories</option>
+                              <option>Women</option>
+                              <option>Men</option>
+                              <option>Jewllery</option>
+                              <option>Bootees Bags</option>
+                              <option>Clothing</option>
+                              <option>Footwear</option>
+                              <option>T-Shirts</option>
+                          </select>
+                      </div>
+                  </div>
+                  <input type="search" placeholder="Search here..." id="text-search" name="search">
+                  <button id="btn-search-category" type="submit">
+                      <i class="icon-search"></i>
+                  </button>
+              </form>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4">
+          <ul class="header-r-cart">
+              <li><a class="cart" href="cart.html">My Cart:2 items</a>
+                  <div class="mini-cart-content">
+                      <div class="cart-products-list">
+                          <div class="cart-products">
+                              <div class="cart-image">
+                                  <a href="#"><img src="<?php echo $this->baseUrl('public/img/cart/1.jpg');?>" alt=""></a>
+                              </div>
+                              <div class="cart-product-info">
+                                  <a href="#" class="product-name"> Donec ac tempus </a>
+                                  <a class="edit-product">Edit item</a>
+                                  <a class="remove-product">Remove item</a>
+                                  <div class="price-times">
+                                      <span class="quantity"><strong> 1 x</strong></span>
+                                      <span class="p-price">$100.00</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cart-products">
+                              <div class="cart-image">
+                                  <a href="#"><img src="<?php echo $this->baseUrl('public/img/cart/2.jpg');?>" alt=""></a>
+                              </div>
+                              <div class="cart-product-info">
+                                  <a href="#" class="product-name">Quisque in arcu </a>
+                                  <a class="edit-product">Edit item</a>
+                                  <a class="remove-product">Remove item</a>
+                                  <div class="price-times">
+                                      <span class="quantity"><strong> 1 x</strong></span>
+                                      <span class="p-price">$260.00</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="cart-price-list">
+                          <p class="price-amount">SUBTotal : <span>$356.15</span> </p>
+                          <div class="cart-buttons">
+                              <a href="checkout.html">Checkout</a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+<?php include("application/views/scripts/include/menu.phtml"); ?>
+</header>
